@@ -1,0 +1,6 @@
+{
+  "name": "HiffyBill - GST Billing & Retail ERP SaaS",
+  "description": "Production-oriented AI-enabled GST Billing & Inventory ERP SaaS for retail and wholesale businesses with multi-branch, variants, packaging, GST invoicing, and Gemini AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
