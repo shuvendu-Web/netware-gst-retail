@@ -835,4 +835,9 @@ async function startServer() {
   listen(initialPort);
 }
 
-startServer();
+// Only launch standalone HTTP listener when not running in Vercel Serverless Function
+if (process.env.VERCEL !== '1' && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
+  startServer();
+}
+
+export default app;

@@ -300,9 +300,13 @@ export const Sales: React.FC<SalesProps> = ({
       const newProductObj: Product = {
         id: prodId,
         name: newProdName.trim(),
+        code: `SKU-${prodId.slice(-6).toUpperCase()}`,
         brand: 'Generic',
         category: newProdCategory || 'General',
+        subcategory: 'General',
         industry: 'General',
+        description: '',
+        uom: 'PCS',
         hsnCode: newProdHsn.trim() || '8517',
         gstRate,
         purchasePrice: Math.round(price * 0.75),

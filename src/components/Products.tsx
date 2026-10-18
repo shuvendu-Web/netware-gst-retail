@@ -1452,6 +1452,7 @@ export const Products: React.FC<ProductsProps> = ({ products, onAddProduct, onUp
                         barcode: code,
                         trackBatch: false,
                         trackExpiry: false,
+                        variants: [],
                         status: 'Active',
                         createdAt: ''
                       });
